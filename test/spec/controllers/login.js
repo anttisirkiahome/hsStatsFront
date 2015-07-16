@@ -1,23 +1,23 @@
 'use strict';
 
-describe('Controller: MainCtrl', function () {
+describe('Controller: LoginctrlCtrl', function () {
 
   // load the controller's module
   beforeEach(module('hsStatsFrontApp'));
 
-  var MainCtrl,
+  var LoginctrlCtrl,
     scope;
 
   // Initialize the controller and a mock scope
-  /*beforeEach(inject(function ($controller, $rootScope) {
+  beforeEach(inject(function ($controller, $rootScope) {
     scope = $rootScope.$new();
-    MainCtrl = $controller('MainCtrl', {
+    LoginctrlCtrl = $controller('LoginctrlCtrl', {
       $scope: scope
       // place here mocked dependencies
     });
   }));
 
   it('should attach a list of awesomeThings to the scope', function () {
-    expect(MainCtrl.awesomeThings.length).toBe(3);
-  }); */
+    expect(LoginctrlCtrl.awesomeThings.length).toBe(3);
+  });
 });

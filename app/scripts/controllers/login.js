@@ -2,13 +2,13 @@
 
 /**
  * @ngdoc function
- * @name hsStatsFrontApp.controller:AboutCtrl
+ * @name hsStatsFrontApp.controller:LoginctrlCtrl
  * @description
- * # AboutCtrl
+ * # LoginctrlCtrl
  * Controller of the hsStatsFrontApp
  */
 angular.module('hsStatsFrontApp')
-  .controller('AboutCtrl', function () {
+  .controller('LoginCtrl', function () {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
