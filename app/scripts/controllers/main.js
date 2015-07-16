@@ -11,9 +11,9 @@ angular.module('hsStatsFrontApp')
   .controller('MainCtrl', function ($scope, deckService) {
   	console.log('MainCtrl');
 
-  	  	//init game
+  	//init game model
   	$scope.game = {
-  		playerClass: 'k'
+  		playerClass: ''
   	};
 
   	deckService.getClasses().then(function(data) {
