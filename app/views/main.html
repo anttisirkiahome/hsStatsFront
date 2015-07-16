@@ -8,8 +8,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="playerClass">Your class</label>
   <div class="col-md-4">
-  <select id="playerClass" name="playerClass" class="form-control">
-       <option ng-repeat="class in classes">{{class}}</option>
+  <select class="form-control" id="playerClass" name="playerClass" ng-model="game.playerClass" ng-options="item.class for item in classes | orderBy: '+':true track by $index">
   </select>
   </div>
 </div>
@@ -28,9 +27,8 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="opponentsClass">Opponent's class</label>
   <div class="col-md-4">
-    <select id="opponentsClass" name="opponentsClass" class="form-control">
-      <option ng-repeat="class in classes">{{class}}</option>
-    </select>
+      <select class="form-control" id="opponentClass" name="opponentClass" ng-model="game.opponentClass" ng-options="item.class for item in classes | orderBy: '+':true track by $index">
+  </select>
   </div>
 </div>
 

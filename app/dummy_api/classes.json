@@ -1,5 +1,11 @@
-{
-	"druid": "Druid",
-	"mage": "Mage",
-	"rogue": "Rogue"
-}
+[
+    {
+        "class": "Druid"
+    },
+    {
+    	"class": "Mage"
+    },
+    {
+    	"class": "Rogue"
+    }
+]
