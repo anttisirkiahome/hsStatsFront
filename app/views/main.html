@@ -1,7 +1,6 @@
 <div class="content-container new-game">
 <form class="form-horizontal">
 <fieldset>
-
 <!-- Form Name -->
 <legend>Save a game</legend>
 
@@ -9,10 +8,9 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="playerClass">Your class</label>
   <div class="col-md-4">
-    <select id="playerClass" name="playerClass" class="form-control">
-      <option value="1">Option one</option>
-      <option value="2">Option two</option>
-    </select>
+  <select id="playerClass" name="playerClass" class="form-control">
+       <option ng-repeat="class in classes">{{class}}</option>
+  </select>
   </div>
 </div>
 
@@ -21,8 +19,7 @@
   <label class="col-md-4 control-label" for="playerDeckType">Your deck type</label>
   <div class="col-md-4">
     <select id="playerDeckType" name="playerDeckType" class="form-control">
-      <option value="1">Option one</option>
-      <option value="2">Option two</option>
+      <option ng-repeat="type in deckTypes">{{type}}</option>
     </select>
   </div>
 </div>
@@ -32,8 +29,7 @@
   <label class="col-md-4 control-label" for="opponentsClass">Opponent's class</label>
   <div class="col-md-4">
     <select id="opponentsClass" name="opponentsClass" class="form-control">
-      <option value="1">Option one</option>
-      <option value="2">Option two</option>
+      <option ng-repeat="class in classes">{{class}}</option>
     </select>
   </div>
 </div>
@@ -43,8 +39,7 @@
   <label class="col-md-4 control-label" for="opponentDeckType">Opponent's deck type</label>
   <div class="col-md-4">
     <select id="opponentDeckType" name="opponentDeckType" class="form-control">
-      <option value="1">Option one</option>
-      <option value="2">Option two</option>
+      <option ng-repeat="type in deckTypes">{{type}}</option>
     </select>
   </div>
 </div>

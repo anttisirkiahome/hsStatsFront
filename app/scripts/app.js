@@ -31,10 +31,10 @@ app.config(['$httpProvider', function($httpProvider) {
   $httpProvider.defaults.withCredentials = true;
   $httpProvider.defaults.headers.get['If-Modified-Since'] = '0';
 }]);
-
-  app.config(function ($routeProvider, $provide) {
-    var rootUrl = $("#linkRoot").attr("href");
-    $provide.constant('rootUrl', rootUrl);
+//app.config(function ($routeProvider, $provide) {
+  app.config(function ($routeProvider) {
+    //var rootUrl = $("#linkRoot").attr("href");
+    //$provide.constant('rootUrl', rootUrl);
 
     $routeProvider
       .when('/', {
