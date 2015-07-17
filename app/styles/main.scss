@@ -70,7 +70,7 @@ body {
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 730px;
+     /* max-width: 730px; */
   }
 
   /* Remove the padding we set earlier */
@@ -92,6 +92,8 @@ body {
 
 .container {
   .content-container {
+      width: 48%;
+      float: left;
       border: 1px solid #000;
 
       h3 {
@@ -102,32 +104,34 @@ body {
       >.new-game {
 
       }
-  }
-}
 
-previous-games {
-  ul {
-    color: #FFF;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    li {
-      margin: 0;
-      padding: 8px;
-    }
-  }
-  .previousGame {
-    background-color: red;
+      >previous-games {
+        ul {
+          color: #FFF;
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          li {
+            margin: 0;
+            padding: 8px;
+          }
+        }
+        .previousGame {
+          background-color: red;
 
-    >.editPreviousGame {
-      float: right;
-      &:hover {
-        cursor: pointer;
+          >.editPreviousGame {
+            float: right;
+            &:hover {
+              cursor: pointer;
+            }
+          }
+        }
+        .win {
+          background-color: green;
+        }
       }
-    }
-  }
-  .win {
-    background-color: green;
   }
 }
+
+
 
