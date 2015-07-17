@@ -9,11 +9,15 @@
  */
 angular.module('hsStatsFrontApp')
   .controller('MainCtrl', function ($scope, deckService) {
-  	console.log('MainCtrl');
 
   	//init game model
   	$scope.game = {
-  		playerClass: ''
+  		playerClass: '',
+  		playerDeckType: '',
+  		opponentClass: '',
+  		opponentDeckType: '',
+  		victory: false,
+  		comment: ''
   	};
 
   	deckService.getClasses().then(function(data) {
@@ -24,12 +28,7 @@ angular.module('hsStatsFrontApp')
   		console.log('fail',data);
   	});
 
-  	deckService.getDeckTypes().then(function(data) {
-  		console.log('controller received deck types' , data);
-  		$scope.deckTypes = data;
-  	},
-  	function(data) {
-  		console.log('fail',data);
-  	});
-
+  	$scope.submit = function() {
+  		console.log('submitted' , $scope.game);
+  	};
   });

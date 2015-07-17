@@ -23,23 +23,9 @@ angular.module('hsStatsFrontApp')
         return d.promise;
      }
 
-      function getDeckTypes() {
-        var d = $q.defer();
-        $http.get('./dummy_api/deckTypes.json')
-          .success(function(data) {
-            console.log('received ' , data);
-            d.resolve(data);
-          })
-          .error(function() {
-            d.reject('failed to get classes');
-          });
-          return d.promise;
-       }
-
      var service = {
       classes: [],
-      getClasses: getClasses,
-      getDeckTypes: getDeckTypes
+      getClasses: getClasses
      };
 
      return service;

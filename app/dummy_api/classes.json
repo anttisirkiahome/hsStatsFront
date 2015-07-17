@@ -1,9 +1,11 @@
 [
     {
-        "class": "Druid"
+        "class": "Druid",
+        "deckTypes": ["Aggro", "Ramp", "Combo"]
     },
     {
-    	"class": "Mage"
+    	"class": "Mage",
+    	"deckTypes": ["Aggro", "Control", "Combo"]
     },
     {
     	"class": "Rogue"
