@@ -1,4 +1,4 @@
 [
-	{"opponent": "Rogue", "victory": true},
-	{"opponent": "Mage", "victory": false}
+	{"opponent": "Rogue", "deckType": "Miracle", "victory": true},
+	{"opponent": "Mage", "deckType": "Aggro", "victory": false}
 ]

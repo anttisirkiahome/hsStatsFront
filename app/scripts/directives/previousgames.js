@@ -11,9 +11,10 @@ angular.module('hsStatsFrontApp')
     return {
       templateUrl: 'views/previousGames.html',
       restrict: 'E',
-      link: function postLink() {
+      link: function postLink(scope) {
       		GameService.getGames().then(function(data) {
       			console.log('previous games ' , data);
+      			scope.previousGames = data;
       		});
       }
     };
