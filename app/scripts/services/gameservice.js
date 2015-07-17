@@ -27,8 +27,21 @@ angular.module('hsStatsFrontApp')
       return d.promise;
      }
 
+     function getGames() {
+      var d = $q.defer();
+      $http.get('./dummy_api/games.json')
+        .success(function(data) {
+          d.resolve(data);
+        })
+        .error(function() {
+          d.reject('failed to get games');
+        });
+        return d.promise;
+     }
+
      var service = {
-      saveGame: saveGame
+      saveGame: saveGame,
+      getGames: getGames
      };
 
      return service;
