@@ -8,6 +8,7 @@
     	"deckTypes": ["Aggro", "Control", "Combo"]
     },
     {
-    	"class": "Rogue"
+    	"class": "Rogue",
+    	"deckTypes": ["Aggro", "Miracle"]
     }
 ]
