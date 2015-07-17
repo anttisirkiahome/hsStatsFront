@@ -8,7 +8,7 @@
  * Controller of the hsStatsFrontApp
  */
 angular.module('hsStatsFrontApp')
-  .controller('MainCtrl', function ($scope, deckService, GameService, _) {
+  .controller('MainCtrl', function ($scope, deckService, _) {
 
   	//init game model
   	$scope.game = {
@@ -34,12 +34,4 @@ angular.module('hsStatsFrontApp')
   		console.log('fail',data); // TODO awesome error handling
   	});
 
-  	$scope.submit = function() {
-  		console.log('submitted' , $scope.game);
-  		GameService.saveGame($scope.game).then(function() {
-  			console.log('saved');
-  		}, function() {
-  			console.log('save failed');
-  		});
-  	};
   });
