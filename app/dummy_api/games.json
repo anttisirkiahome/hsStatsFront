@@ -1,4 +1,4 @@
 [
-	{"opponent": "Rogue", "deckType": "Miracle", "victory": true},
-	{"opponent": "Mage", "deckType": "Aggro", "victory": false}
+	{"time": "12.12.12", "player": "Druid", "deckType": "Ramp", "opponent": "Rogue", "opponentDeckType": "Miracle", "victory": true},
+	{"time": "13.12.12", "player": "Druid", "deckType": "Ramp", "opponent": "Mage", "opponentDeckType": "Aggro", "victory": false}
 ]
